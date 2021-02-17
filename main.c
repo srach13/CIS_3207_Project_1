@@ -208,6 +208,80 @@ struct Event* removePQ(struct PQueue* q) {
     return temp;
 }
 
+//                                       LOG FILE CREATION
+
+
+FILE* createLogFile(char* name) {
+    FILE *logFile = fopen(name, "w");
+    if(logFile == NULL) {
+        printf("Unable to create log file.\n");
+        exit(1);
+    }
+    else {
+        return logFile;
+    }
+}
+
+// WRITE TO LOG FILE
+
+void addLog(FILE* logFile, struct Event* event) {
+
+    int eNum = event->eventNum;
+    int eTime = event->time;
+
+    if (event->eventType == 0) {
+        fprintf(logFile, ("At time %d, process %d enters system.\n"), eTime, eNum);
+        return;
+    }
+    if(event->eventType == 1) {
+        fprintf(logFile, ("At time %d, process %d enters CPU.\n"), eTime, eNum);
+        return;
+    }
+    if(event->eventType == 2) {
+        fprintf(logFile, ("At time %d, process %d exit CPU.\n"), eTime, eNum);
+        return;
+    }
+    if(event->eventType == 3) {
+        fprintf(logFile, ("At time %d, process %d begins I/O on Disk 1.\n"), eTime, eNum);
+        return;
+    }
+    if(event->eventType == 4) {
+        fprintf(logFile, ("At time %d, process %d ends I/O on Disk 1.\n"), eTime, eNum);
+        return;
+    }
+    if(event->eventType == 5) {
+        fprintf(logFile, ("At time %d, process %d begins I/O on Disk 2.\n"), eTime, eNum);
+        return;
+    }
+    if(event->eventType == 6) {
+        fprintf(logFile, ("At time %d, process %d ends I/O on Disk 2.\n"), eTime, eNum);
+        return;
+    }
+    if(event->eventType == 7) {
+        fprintf(logFile, ("At time %d, process %d begins I/O on network.\n"), eTime, eNum);
+        return;
+    }
+    if(event->eventType == 8) {
+        fprintf(logFile, ("At time %d, process %d ends I/O on network.\n"), eTime, eNum);
+        return;
+    }
+    if(event->eventType == 9) {
+        fprintf(logFile, ("At time %d, process %d exits the system.\n"), eTime, eNum);
+        return;
+    }
+    if(event->eventType == 10) {
+        fprintf(logFile, ("At time %d, process %d ends the simulation.\n"), eTime, eNum);
+        return;
+    }
+    else {
+        fprintf(logFile, ("Something went wrong, event type %d\n"), event->eventType);
+        return;
+    }
+
+}
+
+
+
 
 
 

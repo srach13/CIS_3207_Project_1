@@ -38,7 +38,7 @@ struct FIFOQueue {
     struct Event *front, *rear;
 };
 
-// CREATE A NEW EVENT BASED ON PRIORITY (LOWER NUMBER -> HIGHER PRIORITY)
+// CREATE A NEW EVENT
 struct Event* newEvent(int number) {
     struct Event* temp = (struct Event*)malloc(sizeof(struct Event));
     temp->eventNum = number;
@@ -98,6 +98,113 @@ struct Event* removeQ(struct FIFOQueue* q) {
         q->rear = NULL;
         q->size = 0;
     }
+    return temp;
+}
+
+// PRIORITY QUEUE DATA STRUCTURE FOR EVENT HANDLING
+
+// CREATE STRUCT FOR PRIORITY QUEUE
+struct PQueue {
+    struct Event *front, *rear;
+};
+
+// CREATE EMPTY PRIORITY QUEUE
+struct PQueue* createPQueue() {
+    struct PQueue* q = (struct PQueue*)malloc(sizeof(struct PQueue));
+    q->front = q->rear = NULL;
+    return q;
+}
+
+// ADD NEW EVENT TO PRIORITY QUEUE
+void addPQ(struct PQueue* q, struct Event* event) {
+
+    // if priority queue is empty, then new event is front and rear
+    if((q->front == NULL) && (q->rear == NULL)){
+        q->front = q->rear = event;
+        return;
+    }
+
+    // if queue is not empty, then add the new event to the queue based off the time (lower time = higher priority)
+    int sorted = 1;
+    int timeOfNew = event->time;
+
+    struct Event* placement = q->front;
+
+    int loop = 0;
+
+    while(sorted == 1) {
+        loop++;
+        if (placement->time < timeOfNew) {
+            // if at rear, add the event as the new rear
+            if (q->rear == placement)  {
+                placement->nextPQ = event;
+                q->rear =event;
+                sorted = 0;
+                return;
+            }
+
+            // if the next event's time is greater than or equal
+            if (placement->nextPQ->time >= timeOfNew) {
+                struct Event* temp = placement->nextPQ;
+                placement->nextPQ = event;
+                event->nextPQ = temp;
+                sorted = 0;
+                return;
+            }
+
+            // cannot sort here
+            sorted = 1;
+            placement = placement->nextPQ;
+            continue;
+        }
+
+        // if the placement to check is the same as the event trying to be added, sort
+        if (placement->time == timeOfNew) {
+            // if not at the rear, point to event after that
+            if (q->rear != placement) {
+                struct Event* temp = placement->nextPQ;
+                placement->nextPQ = event;
+                event->nextPQ = temp;
+                sorted = 0;
+                return;
+            }
+
+            // if at the rear, set as the rear after placement
+            else {
+                placement->nextPQ = event;
+                q->rear = event;
+                sorted = 0;
+                return;
+            }
+        }
+
+        // if the placement is bigger than the event trying to be added, sort if at rear
+        if (placement->time > timeOfNew) {
+            struct Event* temp = placement;
+            q->front = event;
+            event->nextPQ = temp;
+            sorted = 0;
+            return;
+        }
+    }
+}
+
+// REMOVE A KEY FROM QUEUE
+struct Event* removePQ(struct PQueue* q) {
+
+    if (q->front == NULL) {
+        return NULL;
+    }
+
+    // store previous front and move front one node ahead
+    struct Event* temp = q->front;
+    q->front = q->front->nextPQ;
+
+    // if front is null, then change rear to NULL
+    if (q->front == NULL) {
+        q->rear = NULL;
+    }
+
     return temp;
 }
 

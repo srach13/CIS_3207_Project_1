@@ -280,6 +280,138 @@ void addLog(FILE* logFile, struct Event* event) {
 
 }
 
+// CREATE STATISTICS
+
+struct STATS {
+    struct FIFOQueue* component;
+    double averageSize;
+    double maxSize;
+    struct Event* forEventNumSIZE;
+    struct FIFOQueue* sizes;
+
+    double avgResponseTime;
+    double maxResponseTime;
+    int entered;
+    int exit;
+    struct Event* forEventNumRTIME;
+    struct FIFOQueue* responseTimes;
+
+    double utilization;
+    int totalResponseTime;
+
+    double throughput;
+    int jobs;
+};
+
+struct STATS* createSTATS(struct FIFOQueue* component) {
+    struct STATS* new = (struct STATS*)malloc(sizeof(struct STATS));
+    new->sizes = createQueue();
+    new->responseTimes = createQueue();
+    new->component = component;
+    new->jobs = 0;
+    return new;
+}
+
+struct STATS* updateStats(struct STATS* component1, struct Event* event) {
+    component1->jobs = component1->jobs +1;
+    int toUpdate = event->eventType;
+    if((toUpdate == 1) || (toUpdate == 3) || (toUpdate == 5)|| (toUpdate == 7)) {
+        component1->entered = event->time;
+    }
+
+    if(toUpdate == 2 || toUpdate == 4 || toUpdate == 6 || toUpdate == 8) {
+        component1->exit = event->time;
+        int difference = (component1->exit)-(component1->entered);
+        component1->forEventNumRTIME = newEvent(difference);
+        add(component1->responseTimes, component1->forEventNumRTIME);
+    }
+
+    // find size of input queue at this event and add to queue
+    struct Event* sizeIsAdded = newEvent(component1->component->size);
+    component1->forEventNumSIZE = sizeIsAdded;
+    add(component1->sizes, component1->forEventNumSIZE);
+    return component1;
+}
+
+void finishStats(FILE* statsFile, struct STATS* completed, int type) {
+    // get average and maximum size of queue
+    int currentSize;
+    int biggestSize = -1;
+    int totalSize = 0;
+    int jobs = 0;
+    // event to check
+    struct Event* check;
+    int doWeCalculate = 0;
+    if(completed->sizes->front == NULL) {
+        doWeCalculate = 1;
+    }
+
+    while (completed->sizes->front != NULL) {
+        check = removeQ(completed->sizes);
+        currentSize = check->eventNum;
+        totalSize = totalSize + currentSize;
+        if(currentSize > biggestSize) {
+            biggestSize = currentSize;
+        }
+        jobs = jobs +1;
+    }
+
+    completed->jobs = jobs;
+    completed->throughput = (completed->jobs)/FIN_TIME;
+    if(doWeCalculate == 0) {
+        completed->averageSize = (totalSize/jobs);
+        completed->maxSize = biggestSize;
+    }
+    else {
+        completed->averageSize = 0;
+        completed->maxSize = 0;
+    }
+
+    int currentResponseTime;
+    int biggestResponseTime = -1;
+    int totalResponseTime = 0;
+    doWeCalculate = 0;
+    if(completed->responseTimes->front == NULL) {
+        doWeCalculate = 1;
+    }
+
+    // get average and maximum response time of queue and find utilization
+    while (completed->responseTimes->front != NULL) {
+        check = removeQ(completed->responseTimes);
+        currentResponseTime = check->eventNum;
+        totalResponseTime = totalResponseTime + currentResponseTime;
+        if(currentResponseTime > biggestResponseTime) {
+            biggestResponseTime = currentResponseTime;
+        }
+    }
+    if (doWeCalculate == 0) {
+        completed->avgResponseTime = (totalResponseTime/jobs);
+        completed->maxResponseTime = biggestResponseTime;
+    }
+    else {
+        completed->avgResponseTime = 0;
+        completed->maxResponseTime = 0;
+    }
+
+    completed->utilization = (totalResponseTime/FIN_TIME);
+    if(jobs != 0){
+        completed->throughput = (jobs/FIN_TIME);
+    }
+    else {
+        completed->throughput = 0;
+    }
+
+    fprintf(statsFile, ("Stats for %d Queue: \n"), type);
+    fprintf(statsFile, ("Average size of %d- %f\n"), type, completed->averageSize);
+    fprintf(statsFile, ("Max size of %d- %f\n"), type, completed->maxSize);
+    fprintf(statsFile, ("Utilization of %d- %f\n"), type, completed->utilization);
+    fprintf(statsFile, ("Average response time of %d- %f\n"), type, completed->avgResponseTime);
+    fprintf(statsFile, ("Max response time of %d- %f\n"), type, completed->maxResponseTime);
+    fprintf(statsFile, ("Throughput of %d- %f\n"), type, completed->throughput);
+}
+
+
+
 
 
 

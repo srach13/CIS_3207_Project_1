@@ -209,9 +209,7 @@ struct Event* removePQ(struct PQueue* q) {
     return temp;
 }
 
-//                                       LOG FILE CREATION
-
-
+// CREATE LOG FILE
 FILE* createLogFile(char* name) {
     FILE *logFile = fopen(name, "w");
     if(logFile == NULL) {
@@ -370,7 +368,7 @@ void finishStats(FILE* statsFile, struct STATS* completed, int type) {
     int biggestResponseTime = -1;
     int totalResponseTime = 0;
     doWeCalculate = 0;
-    if(completed->responseTimes->front == NULL) {
+    if (completed->responseTimes->front == NULL) {
         doWeCalculate = 1;
     }
 
@@ -379,7 +377,7 @@ void finishStats(FILE* statsFile, struct STATS* completed, int type) {
         check = removeQ(completed->responseTimes);
         currentResponseTime = check->eventNum;
         totalResponseTime = totalResponseTime + currentResponseTime;
-        if(currentResponseTime > biggestResponseTime) {
+        if (currentResponseTime > biggestResponseTime) {
             biggestResponseTime = currentResponseTime;
         }
     }
@@ -393,7 +391,7 @@ void finishStats(FILE* statsFile, struct STATS* completed, int type) {
     }
 
     completed->utilization = (totalResponseTime/FIN_TIME);
-    if(jobs != 0){
+    if (jobs != 0) {
         completed->throughput = (jobs/FIN_TIME);
     }
     else {

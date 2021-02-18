@@ -638,7 +638,37 @@ void handleFinishDisk2(struct PQueue* priority, struct FIFOQueue* CPU, struct FI
     }
 }
 
+// HANDLE NETWORK ARRIVAL EVENT
+void handleArrivalNetwork(struct PQueue* priority, struct Event* job) {
+    job->time = job->time + determineTime(NETWORK_MIN, NETWORK_MAX);
+    job->eventType = 8;
+    addPQ(priority, job);
 
+}
+
+// HANDLE NETWORK FINISH EVENT
+void handleFinishNetwork(struct PQueue* priority, struct FIFOQueue* CPU, struct FIFOQueue* network, struct Event* job) {
+    network->occupied = 1;
+
+    int count = 0;
+    while (count != 1) {
+        if ((CPU->occupied == 0) || (CPU->front != NULL)) {
+            add(CPU, job);
+        }
+        else {
+            job->eventType = 1;
+            addPQ(priority, job);
+            CPU->occupied = 0;
+        }
+        count = count+1;
+    }
+
+    if (network->front != NULL) {
+        struct Event* nextProcessed = removeQ(network);
+        addPQ(priority, nextProcessed);
+        network->occupied = 0;
+    }
+}
 
 
 

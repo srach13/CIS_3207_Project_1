@@ -1,0 +1,6 @@
+For my data, I decided to choose reasonable, simple values that replicate the times it takes
+to process events. For example, I chose QUIT_PROB and NET_PROB to be 0.3. This means that 70% of the time,
+a job leaving the CPU will not quit, and 70% of the time, it will do disk I/0. For the rest of my values,
+I chose numbers in a similar range. For example, my values for DISK1_MIN and DISK1_MAX fall in the same
+interval as DISK2_MIN and DISK2_MAX. I did this to keep the values consistent and so it more closely
+resembles an actual simulation.

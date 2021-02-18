@@ -670,6 +670,17 @@ void handleFinishNetwork(struct PQueue* priority, struct FIFOQueue* CPU, struct 
     }
 }
 
+// HANDLE EXIT SYSTEM EVENT
+void handleExitSystem(struct Event* job) {
+    return;
+}
+
+// HANDLE FINISH EVENT
+void handleFinish(FILE* statsFile, FILE* logFile, struct PQueue* priority, struct Event* job) {
+    priority->front = NULL;
+    fclose(logFile);
+    fclose(statsFile);
+}
 
 
 

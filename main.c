@@ -8,7 +8,7 @@
 #define ARRIVE_MIN 50
 #define ARRIVE_MAX 60
 #define QUIT_PROB 0.2
-#define NETWORK_PROB 0.2
+#define NET_PROB 0.2
 #define CPU_MIN 50
 #define CPU_MAX 60
 #define DISK1_MIN 20
@@ -512,7 +512,7 @@ void handleFinishCPU(struct PQueue* priority, struct FIFOQueue* CPU, struct FIFO
 
     // if it doesn't quit, check if it will go to network or disk
     else {
-        int networkProb = determineProbability(NETWORK_PROB);
+        int networkProb = determineProbability(NET_PROB);
 
         if (networkProb == 0) {
 
@@ -576,8 +576,67 @@ void handleFinishCPU(struct PQueue* priority, struct FIFOQueue* CPU, struct FIFO
 
 }
 
+// HANDLE DISK 1 ARRIVAL EVENT
+void handleArrivalDisk1(struct PQueue* priority, struct Event* job) {
+    job->time = job->time + determineTime(DISK1_MIN, DISK1_MAX);
+    job->eventType = 4;
+    addPQ(priority, job);
+}
 
+// HANDLE DISK 1 FINISH EVENT
+void handleFinishDisk1(struct PQueue* priority, struct FIFOQueue* CPU, struct FIFOQueue* disk1, struct Event* job) {
+    disk1->occupied = 1;
 
+    int count = 0;
+    while (count != 1) {
+        if ((CPU->occupied == 0) || (CPU->front != NULL)) {
+            add(CPU, job);
+        }
+        else {
+            job->eventType = 1;
+            addPQ(priority, job);
+            CPU->occupied = 0;
+        }
+        count = count+1;
+    }
+
+    if (disk1->front != NULL) {
+        struct Event* nextProcessed = removeQ(disk1);
+        addPQ(priority, nextProcessed);
+        disk1->occupied = 0;
+    }
+}
+
+// HANDLE DISK 2 ARRIVAL EVENT
+void handleArrivalDisk2(struct PQueue* priority, struct Event* job) {
+    job->time = job->time + determineTime(DISK2_MIN, DISK2_MAX);
+    job->eventType = 6;
+    addPQ(priority, job);
+
+}
+
+// HANDLE DISK 2 FINISH EVENT
+void handleFinishDisk2(struct PQueue* priority, struct FIFOQueue* CPU, struct FIFOQueue* disk2, struct Event* job) {
+    disk2->occupied = 1;
+
+    int count = 0;
+    while (count != 1) {
+        if ((CPU->occupied == 0) || (CPU->front != NULL)) {
+            add(CPU, job);
+        }
+        else {
+            job->eventType = 1;
+            addPQ(priority, job);
+            CPU->occupied = 0;
+        }
+        count = count +1;
+    }
+    if (disk2->front != NULL) {
+        struct Event* nextProcessed = removeQ(disk2);
+        addPQ(priority, nextProcessed);
+        disk2->occupied = 0;
+    }
+}
 
 
 

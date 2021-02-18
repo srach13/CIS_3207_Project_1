@@ -3,21 +3,21 @@
 #include <time.h>
 #include "config_reader.c"
 
-#define SEED 2
+#define SEED 5
 #define INIT_TIME 0
 #define FIN_TIME 10000
-#define ARRIVE_MIN 50
+#define ARRIVE_MIN 30
 #define ARRIVE_MAX 60
-#define QUIT_PROB 0.2
-#define NET_PROB 0.2
-#define CPU_MIN 50
-#define CPU_MAX 60
-#define DISK1_MIN 20
-#define DISK1_MAX 60
-#define DISK2_MIN 60
-#define DISK2_MAX 100
-#define NETWORK_MIN 20
-#define NETWORK_MAX 40
+#define QUIT_PROB 0.3
+#define NET_PROB 0.3
+#define CPU_MIN 10
+#define CPU_MAX 25
+#define DISK1_MIN 30
+#define DISK1_MAX 45
+#define DISK2_MIN 20
+#define DISK2_MAX 35
+#define NETWORK_MIN 50
+#define NETWORK_MAX 100
 
 
 // EVENT STRUCTURES
@@ -402,8 +402,6 @@ void finishStats(FILE* statsFile, struct STATS* completed, int type) {
     fprintf(statsFile, ("Average size of %d- %f\n"), type, completed->averageSize);
     fprintf(statsFile, ("Max size of %d- %f\n"), type, completed->maxSize);
     fprintf(statsFile, ("Utilization of %d- %f\n"), type, completed->utilization);
-    fprintf(statsFile, ("Average response time of %d- %f\n"), type, completed->avgResponseTime);
-    fprintf(statsFile, ("Max response time of %d- %f\n"), type, completed->maxResponseTime);
     fprintf(statsFile, ("Throughput of %d- %f\n"), type, completed->throughput);
 }
 
@@ -791,9 +789,13 @@ int main(int argc, char **argv) {
         }
         else {
             addLog(logFile, event);
+            fprintf(statsFile, "CPU:\n");
             finishStats(statsFile, sCPU, 1);
+            fprintf(statsFile, "Disk 1:\n");
             finishStats(statsFile, sDisk1, 2);
+            fprintf(statsFile, "Disk 2:\n");
             finishStats(statsFile, sDisk2, 3);
+            fprintf(statsFile, "Network:\n");
             finishStats(statsFile, sNetwork, 4);
             handleFinish(statsFile, logFile, priority, event);
 

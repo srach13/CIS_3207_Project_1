@@ -410,6 +410,76 @@ void finishStats(FILE* statsFile, struct STATS* completed, int type) {
     fprintf(statsFile, ("Throughput of %d- %f\n"), type, completed->throughput);
 }
 
+// determine arrival time of CPU, disk 1, disk 2, or network
+int determineTime(int min, int max) {
+    int timeNeeded;
+    timeNeeded = (rand()%(max-min+1))+min;
+    return timeNeeded;
+}
+
+// determine quit, network, or I/O probability
+int determineProbability(double probType) {
+    int boolean;
+    double place;
+    place = (rand()%100);
+    if (place >= (probType*100)) {
+        boolean = 0; // 0 executes
+    }
+    else {
+        boolean = 1; // 1 doesn't execute
+    }
+    return boolean;
+}
+
+// checkWhichDisk to choose
+int checkWhichDisk(struct FIFOQueue* disk1, struct FIFOQueue* disk2) {
+    int whichDisk = -1;
+
+    // disk 1 isn't busy
+    if(disk1->front == NULL) {
+        whichDisk = 1;
+    }
+
+    // disk 2 isn't busy
+    if(disk2->front == NULL){
+        whichDisk = 2;
+    }
+
+    // if both are busy, see which one is less busy
+    else {
+        int disk1Count = 0;
+        int disk2Count = 0;
+        struct Event* placement1 = disk1->front;
+        struct Event* placement2 = disk2->front;;
+
+        while (placement1 != NULL) {
+            disk1Count = disk1Count +1;
+            placement1 = placement1->nextFIFO;
+        }
+
+        while (placement2 != NULL) {
+            disk2Count = disk2Count +1;
+            placement2 = placement2->nextFIFO;
+        }
+
+        if (disk1Count <= disk2Count) {
+            whichDisk = 1;
+            return whichDisk;
+        }
+
+        else {
+            whichDisk = 2;
+        }
+    }
+    return whichDisk;
+}
+
+
+
+
+
+
+
 
 
 

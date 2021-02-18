@@ -1,6 +1,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <time.h>
+#include "config_reader.c"
 
 #define SEED 2
 #define INIT_TIME 0
@@ -682,6 +683,126 @@ void handleFinish(FILE* statsFile, FILE* logFile, struct PQueue* priority, struc
     fclose(statsFile);
 }
 
+// MAIN FUNCTION
+int main(int argc, char **argv) {
+    readFile("config.txt");
+    time_t seed;
+    srand((unsigned)time(&seed));
+    struct FIFOQueue* CPU = createQueue();
+    CPU->occupied = 1;
+    struct FIFOQueue* disk1 = createQueue();
+    disk1->occupied = 1;
+    struct FIFOQueue* disk2 = createQueue();
+    disk2->occupied = 1;
+    struct FIFOQueue* network = createQueue();
+    network->occupied = 1;
+    struct PQueue* priority = createPQueue();
+    FILE* logFile = createLogFile("log_file");
+    FILE* statsFile = createLogFile("stats_file");
+    struct STATS* sCPU = createSTATS(CPU);
+    struct STATS* sDisk1 = createSTATS(disk1);
+    struct STATS* sDisk2 = createSTATS(disk2);
+    struct STATS* sNetwork = createSTATS(network);
+
+    // initialize priority queue
+    struct Event* event1 = newEvent(1);
+    event1->eventType = 0;
+    event1->time = INIT_TIME;
+    addPQ(priority, event1);
+
+    // end for priority queue
+    struct Event* eventLast = newEvent(0);
+    eventLast->eventType = 10;
+    eventLast->time = FIN_TIME;
+    addPQ(priority, eventLast);
+
+    // event to be pulled from queue
+    struct Event* event;
+
+    while (priority->front != NULL) {
+
+        event = removePQ(priority);
+
+        if (event->eventType == 0) {
+            addLog(logFile, event);
+            handleArrival(priority, CPU, event);
+            continue;
+        }
+
+        if (event->eventType == 1) {
+            addLog(logFile, event);
+            sCPU = updateStats(sCPU, event);
+            handleArrivalCPU(priority, event);
+            continue;
+        }
+
+        if (event->eventType == 2) {
+            addLog(logFile, event);
+            sCPU = updateStats(sCPU, event);
+            handleFinishCPU(priority, CPU, disk1, disk2, network, event);
+            continue;
+        }
+
+        if (event->eventType == 3) {
+            addLog(logFile, event);
+            sDisk1 = updateStats(sDisk1, event);
+            handleArrivalDisk1(priority, event);
+            continue;
+        }
+
+        if (event->eventType == 4) {
+            addLog(logFile, event);
+            sDisk1 = updateStats(sDisk1, event);
+            handleFinishDisk1(priority, CPU, disk1, event);
+            continue;
+
+        }
+        if (event->eventType == 5) {
+            addLog(logFile, event);
+            sDisk2 = updateStats(sDisk2, event);
+            handleArrivalDisk2(priority, event);
+            continue;
+
+        }
+        if (event->eventType == 6) {
+            addLog(logFile, event);
+            sDisk2= updateStats(sDisk2, event);
+            handleFinishDisk2(priority, CPU, disk2, event);
+            continue;
+
+        }
+        if (event->eventType == 7) {
+            addLog(logFile, event);
+            sNetwork = updateStats(sNetwork, event);
+            handleArrivalNetwork(priority, event);
+            continue;
+
+        }
+        if (event->eventType == 8) {
+            addLog(logFile, event);
+            sNetwork = updateStats(sNetwork, event);
+            handleFinishNetwork(priority, CPU, network, event);
+            continue;
+
+        }
+        if (event->eventType == 9) {
+            addLog(logFile, event);
+            handleExitSystem(event);
+            continue;
+
+        }
+        else {
+            addLog(logFile, event);
+            finishStats(statsFile, sCPU, 1);
+            finishStats(statsFile, sDisk1, 2);
+            finishStats(statsFile, sDisk2, 3);
+            finishStats(statsFile, sNetwork, 4);
+            handleFinish(statsFile, logFile, priority, event);
+
+        }
+    }
+    return 0;
+}
 
 
 

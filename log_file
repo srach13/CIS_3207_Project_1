@@ -1,0 +1,1244 @@
+At time 0, process 1 enters system.
+At time 0, process 1 enters CPU.
+At time 11, process 1 exit CPU.
+At time 11, process 1 exits the system.
+At time 53, process 2 enters system.
+At time 53, process 2 enters CPU.
+At time 76, process 2 exit CPU.
+At time 76, process 2 exits the system.
+At time 88, process 3 enters system.
+At time 88, process 3 enters CPU.
+At time 110, process 3 exit CPU.
+At time 110, process 3 begins I/O on Disk 2.
+At time 127, process 4 enters system.
+At time 127, process 4 enters CPU.
+At time 139, process 4 exit CPU.
+At time 139, process 4 begins I/O on Disk 2.
+At time 141, process 3 ends I/O on Disk 2.
+At time 141, process 3 enters CPU.
+At time 160, process 3 exit CPU.
+At time 160, process 3 exits the system.
+At time 161, process 4 ends I/O on Disk 2.
+At time 161, process 4 enters CPU.
+At time 172, process 4 exit CPU.
+At time 172, process 4 begins I/O on network.
+At time 178, process 5 enters system.
+At time 178, process 5 enters CPU.
+At time 193, process 5 exit CPU.
+At time 193, process 5 exits the system.
+At time 233, process 4 ends I/O on network.
+At time 233, process 4 enters CPU.
+At time 237, process 6 enters system.
+At time 251, process 4 exit CPU.
+At time 251, process 4 begins I/O on network.
+At time 251, process 6 enters CPU.
+At time 271, process 6 exit CPU.
+At time 271, process 6 begins I/O on network.
+At time 289, process 7 enters system.
+At time 289, process 7 enters CPU.
+At time 302, process 7 exit CPU.
+At time 302, process 7 begins I/O on Disk 2.
+At time 323, process 7 ends I/O on Disk 2.
+At time 323, process 7 enters CPU.
+At time 335, process 8 enters system.
+At time 336, process 4 ends I/O on network.
+At time 341, process 7 exit CPU.
+At time 341, process 7 exits the system.
+At time 341, process 8 enters CPU.
+At time 353, process 6 ends I/O on network.
+At time 360, process 8 exit CPU.
+At time 360, process 8 exits the system.
+At time 360, process 4 enters CPU.
+At time 382, process 9 enters system.
+At time 382, process 4 exit CPU.
+At time 382, process 4 exits the system.
+At time 382, process 6 enters CPU.
+At time 405, process 6 exit CPU.
+At time 405, process 6 exits the system.
+At time 405, process 9 enters CPU.
+At time 417, process 9 exit CPU.
+At time 417, process 9 exits the system.
+At time 418, process 10 enters system.
+At time 418, process 10 enters CPU.
+At time 441, process 10 exit CPU.
+At time 441, process 10 begins I/O on network.
+At time 474, process 11 enters system.
+At time 474, process 11 enters CPU.
+At time 495, process 11 exit CPU.
+At time 495, process 11 exits the system.
+At time 496, process 10 ends I/O on network.
+At time 496, process 10 enters CPU.
+At time 507, process 12 enters system.
+At time 512, process 10 exit CPU.
+At time 512, process 10 begins I/O on network.
+At time 512, process 12 enters CPU.
+At time 524, process 12 exit CPU.
+At time 524, process 12 begins I/O on network.
+At time 561, process 13 enters system.
+At time 561, process 13 enters CPU.
+At time 571, process 13 exit CPU.
+At time 571, process 13 exits the system.
+At time 578, process 12 ends I/O on network.
+At time 578, process 12 enters CPU.
+At time 599, process 12 exit CPU.
+At time 599, process 12 begins I/O on network.
+At time 604, process 10 ends I/O on network.
+At time 604, process 10 enters CPU.
+At time 617, process 14 enters system.
+At time 627, process 10 exit CPU.
+At time 627, process 10 exits the system.
+At time 627, process 14 enters CPU.
+At time 646, process 14 exit CPU.
+At time 646, process 14 exits the system.
+At time 677, process 15 enters system.
+At time 677, process 15 enters CPU.
+At time 690, process 15 exit CPU.
+At time 690, process 15 exits the system.
+At time 691, process 12 ends I/O on network.
+At time 691, process 12 enters CPU.
+At time 713, process 12 exit CPU.
+At time 713, process 12 begins I/O on network.
+At time 719, process 16 enters system.
+At time 719, process 16 enters CPU.
+At time 744, process 16 exit CPU.
+At time 744, process 16 exits the system.
+At time 765, process 12 ends I/O on network.
+At time 765, process 12 enters CPU.
+At time 777, process 17 enters system.
+At time 782, process 12 exit CPU.
+At time 782, process 12 begins I/O on network.
+At time 782, process 17 enters CPU.
+At time 802, process 17 exit CPU.
+At time 802, process 17 begins I/O on Disk 2.
+At time 822, process 18 enters system.
+At time 822, process 18 enters CPU.
+At time 836, process 17 ends I/O on Disk 2.
+At time 840, process 18 exit CPU.
+At time 840, process 18 exits the system.
+At time 840, process 17 enters CPU.
+At time 853, process 17 exit CPU.
+At time 853, process 17 exits the system.
+At time 861, process 12 ends I/O on network.
+At time 861, process 12 enters CPU.
+At time 878, process 19 enters system.
+At time 881, process 12 exit CPU.
+At time 881, process 12 exits the system.
+At time 881, process 19 enters CPU.
+At time 896, process 19 exit CPU.
+At time 896, process 19 exits the system.
+At time 929, process 20 enters system.
+At time 929, process 20 enters CPU.
+At time 954, process 20 exit CPU.
+At time 954, process 20 exits the system.
+At time 964, process 21 enters system.
+At time 964, process 21 enters CPU.
+At time 980, process 21 exit CPU.
+At time 980, process 21 exits the system.
+At time 996, process 22 enters system.
+At time 996, process 22 enters CPU.
+At time 1012, process 22 exit CPU.
+At time 1012, process 22 exits the system.
+At time 1029, process 23 enters system.
+At time 1029, process 23 enters CPU.
+At time 1053, process 23 exit CPU.
+At time 1053, process 23 exits the system.
+At time 1062, process 24 enters system.
+At time 1062, process 24 enters CPU.
+At time 1078, process 24 exit CPU.
+At time 1078, process 24 exits the system.
+At time 1105, process 25 enters system.
+At time 1105, process 25 enters CPU.
+At time 1122, process 25 exit CPU.
+At time 1122, process 25 exits the system.
+At time 1160, process 26 enters system.
+At time 1160, process 26 enters CPU.
+At time 1185, process 26 exit CPU.
+At time 1185, process 26 exits the system.
+At time 1210, process 27 enters system.
+At time 1210, process 27 enters CPU.
+At time 1220, process 27 exit CPU.
+At time 1220, process 27 exits the system.
+At time 1266, process 28 enters system.
+At time 1266, process 28 enters CPU.
+At time 1276, process 28 exit CPU.
+At time 1276, process 28 begins I/O on Disk 2.
+At time 1307, process 28 ends I/O on Disk 2.
+At time 1307, process 28 enters CPU.
+At time 1320, process 28 exit CPU.
+At time 1320, process 28 begins I/O on network.
+At time 1324, process 29 enters system.
+At time 1324, process 29 enters CPU.
+At time 1336, process 29 exit CPU.
+At time 1336, process 29 begins I/O on network.
+At time 1378, process 30 enters system.
+At time 1378, process 30 enters CPU.
+At time 1385, process 28 ends I/O on network.
+At time 1389, process 30 exit CPU.
+At time 1389, process 30 begins I/O on network.
+At time 1389, process 28 enters CPU.
+At time 1414, process 29 ends I/O on network.
+At time 1414, process 28 exit CPU.
+At time 1414, process 28 exits the system.
+At time 1414, process 29 enters CPU.
+At time 1424, process 29 exit CPU.
+At time 1424, process 29 begins I/O on Disk 2.
+At time 1432, process 31 enters system.
+At time 1432, process 31 enters CPU.
+At time 1452, process 30 ends I/O on network.
+At time 1453, process 31 exit CPU.
+At time 1453, process 29 ends I/O on Disk 2.
+At time 1453, process 30 enters CPU.
+At time 1453, process 31 exits the system.
+At time 1466, process 30 exit CPU.
+At time 1466, process 30 exits the system.
+At time 1466, process 29 enters CPU.
+At time 1482, process 32 enters system.
+At time 1485, process 29 exit CPU.
+At time 1485, process 29 exits the system.
+At time 1485, process 32 enters CPU.
+At time 1496, process 32 exit CPU.
+At time 1496, process 32 begins I/O on network.
+At time 1519, process 33 enters system.
+At time 1519, process 33 enters CPU.
+At time 1534, process 33 exit CPU.
+At time 1534, process 33 begins I/O on network.
+At time 1551, process 32 ends I/O on network.
+At time 1551, process 32 enters CPU.
+At time 1575, process 32 exit CPU.
+At time 1575, process 32 begins I/O on network.
+At time 1578, process 34 enters system.
+At time 1578, process 34 enters CPU.
+At time 1590, process 33 ends I/O on network.
+At time 1591, process 34 exit CPU.
+At time 1591, process 34 exits the system.
+At time 1591, process 33 enters CPU.
+At time 1612, process 33 exit CPU.
+At time 1612, process 33 exits the system.
+At time 1620, process 35 enters system.
+At time 1620, process 35 enters CPU.
+At time 1633, process 35 exit CPU.
+At time 1633, process 35 begins I/O on network.
+At time 1668, process 36 enters system.
+At time 1668, process 36 enters CPU.
+At time 1671, process 32 ends I/O on network.
+At time 1688, process 36 exit CPU.
+At time 1688, process 36 begins I/O on network.
+At time 1688, process 32 enters CPU.
+At time 1698, process 32 exit CPU.
+At time 1698, process 32 begins I/O on Disk 2.
+At time 1717, process 35 ends I/O on network.
+At time 1717, process 35 enters CPU.
+At time 1719, process 37 enters system.
+At time 1726, process 32 ends I/O on Disk 2.
+At time 1741, process 35 exit CPU.
+At time 1741, process 35 exits the system.
+At time 1741, process 37 enters CPU.
+At time 1746, process 36 ends I/O on network.
+At time 1755, process 37 exit CPU.
+At time 1755, process 37 exits the system.
+At time 1755, process 32 enters CPU.
+At time 1756, process 38 enters system.
+At time 1774, process 32 exit CPU.
+At time 1774, process 32 exits the system.
+At time 1774, process 36 enters CPU.
+At time 1793, process 39 enters system.
+At time 1797, process 36 exit CPU.
+At time 1797, process 36 exits the system.
+At time 1797, process 38 enters CPU.
+At time 1814, process 38 exit CPU.
+At time 1814, process 38 begins I/O on network.
+At time 1814, process 39 enters CPU.
+At time 1831, process 39 exit CPU.
+At time 1831, process 39 exits the system.
+At time 1853, process 40 enters system.
+At time 1853, process 40 enters CPU.
+At time 1864, process 40 exit CPU.
+At time 1864, process 40 exits the system.
+At time 1881, process 38 ends I/O on network.
+At time 1881, process 38 enters CPU.
+At time 1896, process 38 exit CPU.
+At time 1896, process 38 exits the system.
+At time 1899, process 41 enters system.
+At time 1899, process 41 enters CPU.
+At time 1921, process 41 exit CPU.
+At time 1921, process 41 exits the system.
+At time 1934, process 42 enters system.
+At time 1934, process 42 enters CPU.
+At time 1958, process 42 exit CPU.
+At time 1958, process 42 exits the system.
+At time 1980, process 43 enters system.
+At time 1980, process 43 enters CPU.
+At time 1993, process 43 exit CPU.
+At time 1993, process 43 exits the system.
+At time 2040, process 44 enters system.
+At time 2040, process 44 enters CPU.
+At time 2062, process 44 exit CPU.
+At time 2062, process 44 begins I/O on Disk 2.
+At time 2083, process 45 enters system.
+At time 2083, process 45 enters CPU.
+At time 2087, process 44 ends I/O on Disk 2.
+At time 2105, process 45 exit CPU.
+At time 2105, process 45 exits the system.
+At time 2105, process 44 enters CPU.
+At time 2120, process 46 enters system.
+At time 2129, process 44 exit CPU.
+At time 2129, process 44 begins I/O on Disk 2.
+At time 2129, process 46 enters CPU.
+At time 2145, process 46 exit CPU.
+At time 2145, process 46 begins I/O on network.
+At time 2154, process 44 ends I/O on Disk 2.
+At time 2154, process 44 enters CPU.
+At time 2155, process 47 enters system.
+At time 2176, process 44 exit CPU.
+At time 2176, process 44 exits the system.
+At time 2176, process 47 enters CPU.
+At time 2191, process 47 exit CPU.
+At time 2191, process 47 exits the system.
+At time 2212, process 48 enters system.
+At time 2212, process 48 enters CPU.
+At time 2214, process 46 ends I/O on network.
+At time 2229, process 48 exit CPU.
+At time 2229, process 48 exits the system.
+At time 2229, process 46 enters CPU.
+At time 2239, process 46 exit CPU.
+At time 2239, process 46 exits the system.
+At time 2270, process 49 enters system.
+At time 2270, process 49 enters CPU.
+At time 2281, process 49 exit CPU.
+At time 2281, process 49 exits the system.
+At time 2314, process 50 enters system.
+At time 2314, process 50 enters CPU.
+At time 2335, process 50 exit CPU.
+At time 2335, process 50 exits the system.
+At time 2357, process 51 enters system.
+At time 2357, process 51 enters CPU.
+At time 2369, process 51 exit CPU.
+At time 2369, process 51 begins I/O on Disk 2.
+At time 2389, process 51 ends I/O on Disk 2.
+At time 2389, process 51 enters CPU.
+At time 2405, process 51 exit CPU.
+At time 2405, process 51 exits the system.
+At time 2416, process 52 enters system.
+At time 2416, process 52 enters CPU.
+At time 2435, process 52 exit CPU.
+At time 2435, process 52 begins I/O on network.
+At time 2449, process 53 enters system.
+At time 2449, process 53 enters CPU.
+At time 2464, process 53 exit CPU.
+At time 2464, process 53 begins I/O on network.
+At time 2482, process 54 enters system.
+At time 2482, process 54 enters CPU.
+At time 2498, process 54 exit CPU.
+At time 2498, process 54 begins I/O on Disk 2.
+At time 2525, process 53 ends I/O on network.
+At time 2525, process 53 enters CPU.
+At time 2528, process 52 ends I/O on network.
+At time 2532, process 54 ends I/O on Disk 2.
+At time 2534, process 55 enters system.
+At time 2548, process 53 exit CPU.
+At time 2548, process 53 exits the system.
+At time 2548, process 52 enters CPU.
+At time 2563, process 52 exit CPU.
+At time 2563, process 52 begins I/O on network.
+At time 2563, process 54 enters CPU.
+At time 2578, process 54 exit CPU.
+At time 2578, process 54 exits the system.
+At time 2578, process 55 enters CPU.
+At time 2588, process 56 enters system.
+At time 2599, process 55 exit CPU.
+At time 2599, process 55 begins I/O on network.
+At time 2599, process 56 enters CPU.
+At time 2616, process 56 exit CPU.
+At time 2616, process 56 exits the system.
+At time 2632, process 57 enters system.
+At time 2632, process 57 enters CPU.
+At time 2634, process 52 ends I/O on network.
+At time 2652, process 57 exit CPU.
+At time 2652, process 57 begins I/O on network.
+At time 2652, process 52 enters CPU.
+At time 2667, process 52 exit CPU.
+At time 2667, process 52 begins I/O on network.
+At time 2667, process 54 enters CPU.
+At time 2673, process 55 ends I/O on network.
+At time 2686, process 58 enters system.
+At time 2688, process 54 exit CPU.
+At time 2688, process 54 exits the system.
+At time 2688, process 55 enters CPU.
+At time 2710, process 55 exit CPU.
+At time 2710, process 55 begins I/O on network.
+At time 2710, process 58 enters CPU.
+At time 2726, process 58 exit CPU.
+At time 2726, process 58 exits the system.
+At time 2739, process 57 ends I/O on network.
+At time 2739, process 57 enters CPU.
+At time 2740, process 59 enters system.
+At time 2760, process 57 exit CPU.
+At time 2760, process 52 ends I/O on network.
+At time 2760, process 59 enters CPU.
+At time 2760, process 57 exits the system.
+At time 2770, process 60 enters system.
+At time 2784, process 59 exit CPU.
+At time 2784, process 59 exits the system.
+At time 2784, process 52 enters CPU.
+At time 2792, process 55 ends I/O on network.
+At time 2802, process 52 exit CPU.
+At time 2802, process 52 exits the system.
+At time 2802, process 60 enters CPU.
+At time 2811, process 61 enters system.
+At time 2814, process 60 exit CPU.
+At time 2814, process 60 exits the system.
+At time 2814, process 55 enters CPU.
+At time 2834, process 55 exit CPU.
+At time 2834, process 55 exits the system.
+At time 2834, process 61 enters CPU.
+At time 2851, process 61 exit CPU.
+At time 2851, process 61 exits the system.
+At time 2857, process 62 enters system.
+At time 2857, process 62 enters CPU.
+At time 2882, process 62 exit CPU.
+At time 2882, process 62 begins I/O on network.
+At time 2887, process 63 enters system.
+At time 2887, process 63 enters CPU.
+At time 2902, process 63 exit CPU.
+At time 2902, process 63 exits the system.
+At time 2941, process 64 enters system.
+At time 2941, process 64 enters CPU.
+At time 2944, process 62 ends I/O on network.
+At time 2961, process 64 exit CPU.
+At time 2961, process 64 exits the system.
+At time 2961, process 62 enters CPU.
+At time 2978, process 62 exit CPU.
+At time 2978, process 62 exits the system.
+At time 3001, process 65 enters system.
+At time 3001, process 65 enters CPU.
+At time 3016, process 65 exit CPU.
+At time 3016, process 65 exits the system.
+At time 3035, process 66 enters system.
+At time 3035, process 66 enters CPU.
+At time 3055, process 66 exit CPU.
+At time 3055, process 66 exits the system.
+At time 3070, process 67 enters system.
+At time 3070, process 67 enters CPU.
+At time 3081, process 67 exit CPU.
+At time 3081, process 67 exits the system.
+At time 3101, process 68 enters system.
+At time 3101, process 68 enters CPU.
+At time 3117, process 68 exit CPU.
+At time 3117, process 68 exits the system.
+At time 3139, process 69 enters system.
+At time 3139, process 69 enters CPU.
+At time 3151, process 69 exit CPU.
+At time 3151, process 69 exits the system.
+At time 3170, process 70 enters system.
+At time 3170, process 70 enters CPU.
+At time 3184, process 70 exit CPU.
+At time 3184, process 70 exits the system.
+At time 3220, process 71 enters system.
+At time 3220, process 71 enters CPU.
+At time 3243, process 71 exit CPU.
+At time 3243, process 71 exits the system.
+At time 3256, process 72 enters system.
+At time 3256, process 72 enters CPU.
+At time 3279, process 72 exit CPU.
+At time 3279, process 72 exits the system.
+At time 3315, process 73 enters system.
+At time 3315, process 73 enters CPU.
+At time 3333, process 73 exit CPU.
+At time 3333, process 73 exits the system.
+At time 3368, process 74 enters system.
+At time 3368, process 74 enters CPU.
+At time 3379, process 74 exit CPU.
+At time 3379, process 74 exits the system.
+At time 3421, process 75 enters system.
+At time 3421, process 75 enters CPU.
+At time 3432, process 75 exit CPU.
+At time 3432, process 75 exits the system.
+At time 3467, process 76 enters system.
+At time 3467, process 76 enters CPU.
+At time 3484, process 76 exit CPU.
+At time 3484, process 76 exits the system.
+At time 3497, process 77 enters system.
+At time 3497, process 77 enters CPU.
+At time 3510, process 77 exit CPU.
+At time 3510, process 77 exits the system.
+At time 3534, process 78 enters system.
+At time 3534, process 78 enters CPU.
+At time 3552, process 78 exit CPU.
+At time 3552, process 78 exits the system.
+At time 3564, process 79 enters system.
+At time 3564, process 79 enters CPU.
+At time 3587, process 79 exit CPU.
+At time 3587, process 79 begins I/O on Disk 2.
+At time 3621, process 79 ends I/O on Disk 2.
+At time 3621, process 79 enters CPU.
+At time 3624, process 80 enters system.
+At time 3642, process 79 exit CPU.
+At time 3642, process 79 exits the system.
+At time 3642, process 80 enters CPU.
+At time 3653, process 80 exit CPU.
+At time 3653, process 80 begins I/O on Disk 2.
+At time 3663, process 81 enters system.
+At time 3663, process 81 enters CPU.
+At time 3673, process 81 exit CPU.
+At time 3673, process 81 exits the system.
+At time 3680, process 80 ends I/O on Disk 2.
+At time 3680, process 80 enters CPU.
+At time 3704, process 80 exit CPU.
+At time 3704, process 80 exits the system.
+At time 3717, process 82 enters system.
+At time 3717, process 82 enters CPU.
+At time 3738, process 82 exit CPU.
+At time 3738, process 82 begins I/O on network.
+At time 3758, process 83 enters system.
+At time 3758, process 83 enters CPU.
+At time 3771, process 83 exit CPU.
+At time 3771, process 83 exits the system.
+At time 3795, process 82 ends I/O on network.
+At time 3795, process 82 enters CPU.
+At time 3805, process 84 enters system.
+At time 3817, process 82 exit CPU.
+At time 3817, process 82 exits the system.
+At time 3817, process 84 enters CPU.
+At time 3842, process 84 exit CPU.
+At time 3842, process 84 exits the system.
+At time 3854, process 85 enters system.
+At time 3854, process 85 enters CPU.
+At time 3874, process 85 exit CPU.
+At time 3874, process 85 exits the system.
+At time 3912, process 86 enters system.
+At time 3912, process 86 enters CPU.
+At time 3929, process 86 exit CPU.
+At time 3929, process 86 exits the system.
+At time 3971, process 87 enters system.
+At time 3971, process 87 enters CPU.
+At time 3986, process 87 exit CPU.
+At time 3986, process 87 exits the system.
+At time 4025, process 88 enters system.
+At time 4025, process 88 enters CPU.
+At time 4038, process 88 exit CPU.
+At time 4038, process 88 exits the system.
+At time 4056, process 89 enters system.
+At time 4056, process 89 enters CPU.
+At time 4075, process 89 exit CPU.
+At time 4075, process 89 exits the system.
+At time 4093, process 90 enters system.
+At time 4093, process 90 enters CPU.
+At time 4103, process 90 exit CPU.
+At time 4103, process 90 begins I/O on network.
+At time 4127, process 91 enters system.
+At time 4127, process 91 enters CPU.
+At time 4144, process 91 exit CPU.
+At time 4144, process 91 exits the system.
+At time 4161, process 92 enters system.
+At time 4161, process 92 enters CPU.
+At time 4178, process 92 exit CPU.
+At time 4178, process 92 exits the system.
+At time 4180, process 90 ends I/O on network.
+At time 4180, process 90 enters CPU.
+At time 4192, process 90 exit CPU.
+At time 4192, process 90 exits the system.
+At time 4219, process 93 enters system.
+At time 4219, process 93 enters CPU.
+At time 4230, process 93 exit CPU.
+At time 4230, process 93 exits the system.
+At time 4278, process 94 enters system.
+At time 4278, process 94 enters CPU.
+At time 4291, process 94 exit CPU.
+At time 4291, process 94 exits the system.
+At time 4322, process 95 enters system.
+At time 4322, process 95 enters CPU.
+At time 4339, process 95 exit CPU.
+At time 4339, process 95 exits the system.
+At time 4371, process 96 enters system.
+At time 4371, process 96 enters CPU.
+At time 4383, process 96 exit CPU.
+At time 4383, process 96 exits the system.
+At time 4422, process 97 enters system.
+At time 4422, process 97 enters CPU.
+At time 4441, process 97 exit CPU.
+At time 4441, process 97 exits the system.
+At time 4465, process 98 enters system.
+At time 4465, process 98 enters CPU.
+At time 4475, process 98 exit CPU.
+At time 4475, process 98 exits the system.
+At time 4513, process 99 enters system.
+At time 4513, process 99 enters CPU.
+At time 4525, process 99 exit CPU.
+At time 4525, process 99 exits the system.
+At time 4563, process 100 enters system.
+At time 4563, process 100 enters CPU.
+At time 4585, process 100 exit CPU.
+At time 4585, process 100 exits the system.
+At time 4593, process 101 enters system.
+At time 4593, process 101 enters CPU.
+At time 4605, process 101 exit CPU.
+At time 4605, process 101 begins I/O on network.
+At time 4629, process 102 enters system.
+At time 4629, process 102 enters CPU.
+At time 4645, process 102 exit CPU.
+At time 4645, process 102 exits the system.
+At time 4667, process 101 ends I/O on network.
+At time 4667, process 101 enters CPU.
+At time 4678, process 101 exit CPU.
+At time 4678, process 101 exits the system.
+At time 4687, process 103 enters system.
+At time 4687, process 103 enters CPU.
+At time 4712, process 103 exit CPU.
+At time 4712, process 103 begins I/O on network.
+At time 4737, process 104 enters system.
+At time 4737, process 104 enters CPU.
+At time 4760, process 104 exit CPU.
+At time 4760, process 104 exits the system.
+At time 4765, process 103 ends I/O on network.
+At time 4765, process 103 enters CPU.
+At time 4784, process 105 enters system.
+At time 4788, process 103 exit CPU.
+At time 4788, process 103 begins I/O on network.
+At time 4788, process 105 enters CPU.
+At time 4806, process 105 exit CPU.
+At time 4806, process 105 begins I/O on network.
+At time 4838, process 103 ends I/O on network.
+At time 4838, process 103 enters CPU.
+At time 4844, process 106 enters system.
+At time 4860, process 103 exit CPU.
+At time 4860, process 103 exits the system.
+At time 4860, process 106 enters CPU.
+At time 4872, process 106 exit CPU.
+At time 4872, process 106 exits the system.
+At time 4900, process 107 enters system.
+At time 4900, process 105 ends I/O on network.
+At time 4900, process 107 enters CPU.
+At time 4913, process 107 exit CPU.
+At time 4913, process 107 exits the system.
+At time 4913, process 105 enters CPU.
+At time 4927, process 105 exit CPU.
+At time 4927, process 105 begins I/O on network.
+At time 4946, process 108 enters system.
+At time 4946, process 108 enters CPU.
+At time 4959, process 108 exit CPU.
+At time 4959, process 108 exits the system.
+At time 4990, process 105 ends I/O on network.
+At time 4990, process 105 enters CPU.
+At time 5002, process 105 exit CPU.
+At time 5002, process 105 exits the system.
+At time 5003, process 109 enters system.
+At time 5003, process 109 enters CPU.
+At time 5015, process 109 exit CPU.
+At time 5015, process 109 exits the system.
+At time 5036, process 110 enters system.
+At time 5036, process 110 enters CPU.
+At time 5048, process 110 exit CPU.
+At time 5048, process 110 exits the system.
+At time 5085, process 111 enters system.
+At time 5085, process 111 enters CPU.
+At time 5103, process 111 exit CPU.
+At time 5103, process 111 begins I/O on Disk 2.
+At time 5123, process 111 ends I/O on Disk 2.
+At time 5123, process 111 enters CPU.
+At time 5125, process 112 enters system.
+At time 5140, process 111 exit CPU.
+At time 5140, process 111 exits the system.
+At time 5140, process 112 enters CPU.
+At time 5156, process 112 exit CPU.
+At time 5156, process 112 begins I/O on Disk 2.
+At time 5175, process 113 enters system.
+At time 5175, process 113 enters CPU.
+At time 5188, process 112 ends I/O on Disk 2.
+At time 5194, process 113 exit CPU.
+At time 5194, process 113 begins I/O on network.
+At time 5194, process 112 enters CPU.
+At time 5216, process 112 exit CPU.
+At time 5216, process 112 exits the system.
+At time 5230, process 114 enters system.
+At time 5230, process 114 enters CPU.
+At time 5245, process 114 exit CPU.
+At time 5245, process 114 exits the system.
+At time 5262, process 113 ends I/O on network.
+At time 5262, process 113 enters CPU.
+At time 5277, process 115 enters system.
+At time 5278, process 113 exit CPU.
+At time 5278, process 113 begins I/O on Disk 2.
+At time 5278, process 115 enters CPU.
+At time 5296, process 115 exit CPU.
+At time 5296, process 115 exits the system.
+At time 5309, process 116 enters system.
+At time 5309, process 116 enters CPU.
+At time 5311, process 113 ends I/O on Disk 2.
+At time 5326, process 116 exit CPU.
+At time 5326, process 116 exits the system.
+At time 5326, process 113 enters CPU.
+At time 5350, process 113 exit CPU.
+At time 5350, process 113 exits the system.
+At time 5364, process 117 enters system.
+At time 5364, process 117 enters CPU.
+At time 5389, process 117 exit CPU.
+At time 5389, process 117 exits the system.
+At time 5395, process 118 enters system.
+At time 5395, process 118 enters CPU.
+At time 5410, process 118 exit CPU.
+At time 5410, process 118 exits the system.
+At time 5448, process 119 enters system.
+At time 5448, process 119 enters CPU.
+At time 5462, process 119 exit CPU.
+At time 5462, process 119 begins I/O on network.
+At time 5480, process 120 enters system.
+At time 5480, process 120 enters CPU.
+At time 5503, process 120 exit CPU.
+At time 5503, process 120 exits the system.
+At time 5529, process 121 enters system.
+At time 5529, process 121 enters CPU.
+At time 5550, process 121 exit CPU.
+At time 5550, process 121 exits the system.
+At time 5555, process 119 ends I/O on network.
+At time 5555, process 119 enters CPU.
+At time 5567, process 122 enters system.
+At time 5572, process 119 exit CPU.
+At time 5572, process 119 exits the system.
+At time 5572, process 122 enters CPU.
+At time 5592, process 122 exit CPU.
+At time 5592, process 122 begins I/O on Disk 2.
+At time 5613, process 122 ends I/O on Disk 2.
+At time 5613, process 122 enters CPU.
+At time 5614, process 123 enters system.
+At time 5635, process 122 exit CPU.
+At time 5635, process 122 exits the system.
+At time 5635, process 123 enters CPU.
+At time 5647, process 123 exit CPU.
+At time 5647, process 123 exits the system.
+At time 5663, process 124 enters system.
+At time 5663, process 124 enters CPU.
+At time 5681, process 124 exit CPU.
+At time 5681, process 124 exits the system.
+At time 5696, process 125 enters system.
+At time 5696, process 125 enters CPU.
+At time 5707, process 125 exit CPU.
+At time 5707, process 125 begins I/O on Disk 2.
+At time 5732, process 125 ends I/O on Disk 2.
+At time 5732, process 125 enters CPU.
+At time 5751, process 126 enters system.
+At time 5755, process 125 exit CPU.
+At time 5755, process 125 exits the system.
+At time 5755, process 126 enters CPU.
+At time 5767, process 126 exit CPU.
+At time 5767, process 126 exits the system.
+At time 5795, process 127 enters system.
+At time 5795, process 127 enters CPU.
+At time 5818, process 127 exit CPU.
+At time 5818, process 127 exits the system.
+At time 5830, process 128 enters system.
+At time 5830, process 128 enters CPU.
+At time 5842, process 128 exit CPU.
+At time 5842, process 128 begins I/O on network.
+At time 5890, process 129 enters system.
+At time 5890, process 129 enters CPU.
+At time 5912, process 129 exit CPU.
+At time 5912, process 129 exits the system.
+At time 5920, process 130 enters system.
+At time 5920, process 130 enters CPU.
+At time 5930, process 130 exit CPU.
+At time 5930, process 130 exits the system.
+At time 5942, process 128 ends I/O on network.
+At time 5942, process 128 enters CPU.
+At time 5958, process 128 exit CPU.
+At time 5958, process 128 exits the system.
+At time 5980, process 131 enters system.
+At time 5980, process 131 enters CPU.
+At time 5994, process 131 exit CPU.
+At time 5994, process 131 exits the system.
+At time 6017, process 132 enters system.
+At time 6017, process 132 enters CPU.
+At time 6030, process 132 exit CPU.
+At time 6030, process 132 exits the system.
+At time 6051, process 133 enters system.
+At time 6051, process 133 enters CPU.
+At time 6067, process 133 exit CPU.
+At time 6067, process 133 exits the system.
+At time 6098, process 134 enters system.
+At time 6098, process 134 enters CPU.
+At time 6113, process 134 exit CPU.
+At time 6113, process 134 begins I/O on network.
+At time 6132, process 135 enters system.
+At time 6132, process 135 enters CPU.
+At time 6149, process 135 exit CPU.
+At time 6149, process 135 exits the system.
+At time 6186, process 136 enters system.
+At time 6186, process 136 enters CPU.
+At time 6202, process 136 exit CPU.
+At time 6202, process 136 exits the system.
+At time 6203, process 134 ends I/O on network.
+At time 6203, process 134 enters CPU.
+At time 6216, process 134 exit CPU.
+At time 6216, process 134 exits the system.
+At time 6221, process 137 enters system.
+At time 6221, process 137 enters CPU.
+At time 6235, process 137 exit CPU.
+At time 6235, process 137 exits the system.
+At time 6256, process 138 enters system.
+At time 6256, process 138 enters CPU.
+At time 6276, process 138 exit CPU.
+At time 6276, process 138 begins I/O on network.
+At time 6302, process 139 enters system.
+At time 6302, process 139 enters CPU.
+At time 6324, process 139 exit CPU.
+At time 6324, process 139 begins I/O on network.
+At time 6338, process 140 enters system.
+At time 6338, process 140 enters CPU.
+At time 6353, process 140 exit CPU.
+At time 6353, process 140 exits the system.
+At time 6371, process 138 ends I/O on network.
+At time 6371, process 138 enters CPU.
+At time 6389, process 141 enters system.
+At time 6394, process 138 exit CPU.
+At time 6394, process 138 begins I/O on network.
+At time 6394, process 141 enters CPU.
+At time 6404, process 141 exit CPU.
+At time 6404, process 141 exits the system.
+At time 6406, process 139 ends I/O on network.
+At time 6406, process 139 enters CPU.
+At time 6427, process 139 exit CPU.
+At time 6427, process 139 exits the system.
+At time 6442, process 142 enters system.
+At time 6442, process 142 enters CPU.
+At time 6466, process 138 ends I/O on network.
+At time 6467, process 142 exit CPU.
+At time 6467, process 142 exits the system.
+At time 6467, process 138 enters CPU.
+At time 6477, process 138 exit CPU.
+At time 6477, process 138 exits the system.
+At time 6502, process 143 enters system.
+At time 6502, process 143 enters CPU.
+At time 6519, process 143 exit CPU.
+At time 6519, process 143 exits the system.
+At time 6560, process 144 enters system.
+At time 6560, process 144 enters CPU.
+At time 6582, process 144 exit CPU.
+At time 6582, process 144 exits the system.
+At time 6602, process 145 enters system.
+At time 6602, process 145 enters CPU.
+At time 6619, process 145 exit CPU.
+At time 6619, process 145 begins I/O on network.
+At time 6635, process 146 enters system.
+At time 6635, process 146 enters CPU.
+At time 6648, process 146 exit CPU.
+At time 6648, process 146 exits the system.
+At time 6667, process 147 enters system.
+At time 6667, process 147 enters CPU.
+At time 6683, process 145 ends I/O on network.
+At time 6684, process 147 exit CPU.
+At time 6684, process 147 exits the system.
+At time 6684, process 145 enters CPU.
+At time 6707, process 145 exit CPU.
+At time 6707, process 145 begins I/O on network.
+At time 6718, process 148 enters system.
+At time 6718, process 148 enters CPU.
+At time 6736, process 148 exit CPU.
+At time 6736, process 148 exits the system.
+At time 6765, process 149 enters system.
+At time 6765, process 149 enters CPU.
+At time 6772, process 145 ends I/O on network.
+At time 6787, process 149 exit CPU.
+At time 6787, process 149 exits the system.
+At time 6787, process 145 enters CPU.
+At time 6805, process 145 exit CPU.
+At time 6805, process 145 begins I/O on Disk 2.
+At time 6807, process 150 enters system.
+At time 6807, process 150 enters CPU.
+At time 6831, process 150 exit CPU.
+At time 6831, process 150 exits the system.
+At time 6837, process 145 ends I/O on Disk 2.
+At time 6837, process 145 enters CPU.
+At time 6845, process 151 enters system.
+At time 6856, process 145 exit CPU.
+At time 6856, process 145 exits the system.
+At time 6856, process 151 enters CPU.
+At time 6877, process 151 exit CPU.
+At time 6877, process 151 exits the system.
+At time 6884, process 152 enters system.
+At time 6884, process 152 enters CPU.
+At time 6909, process 152 exit CPU.
+At time 6909, process 152 exits the system.
+At time 6938, process 153 enters system.
+At time 6938, process 153 enters CPU.
+At time 6948, process 153 exit CPU.
+At time 6948, process 153 exits the system.
+At time 6978, process 154 enters system.
+At time 6978, process 154 enters CPU.
+At time 6989, process 154 exit CPU.
+At time 6989, process 154 begins I/O on Disk 2.
+At time 7016, process 154 ends I/O on Disk 2.
+At time 7016, process 154 enters CPU.
+At time 7025, process 155 enters system.
+At time 7026, process 154 exit CPU.
+At time 7026, process 154 exits the system.
+At time 7026, process 155 enters CPU.
+At time 7040, process 155 exit CPU.
+At time 7040, process 155 begins I/O on network.
+At time 7083, process 156 enters system.
+At time 7083, process 156 enters CPU.
+At time 7101, process 156 exit CPU.
+At time 7101, process 156 exits the system.
+At time 7127, process 157 enters system.
+At time 7127, process 157 enters CPU.
+At time 7135, process 155 ends I/O on network.
+At time 7139, process 157 exit CPU.
+At time 7139, process 157 begins I/O on network.
+At time 7139, process 155 enters CPU.
+At time 7159, process 155 exit CPU.
+At time 7159, process 155 exits the system.
+At time 7183, process 158 enters system.
+At time 7183, process 158 enters CPU.
+At time 7198, process 158 exit CPU.
+At time 7198, process 158 exits the system.
+At time 7199, process 157 ends I/O on network.
+At time 7199, process 157 enters CPU.
+At time 7209, process 157 exit CPU.
+At time 7209, process 157 begins I/O on network.
+At time 7221, process 159 enters system.
+At time 7221, process 159 enters CPU.
+At time 7241, process 159 exit CPU.
+At time 7241, process 159 exits the system.
+At time 7261, process 157 ends I/O on network.
+At time 7261, process 157 enters CPU.
+At time 7270, process 160 enters system.
+At time 7276, process 157 exit CPU.
+At time 7276, process 157 exits the system.
+At time 7276, process 160 enters CPU.
+At time 7289, process 160 exit CPU.
+At time 7289, process 160 begins I/O on network.
+At time 7306, process 161 enters system.
+At time 7306, process 161 enters CPU.
+At time 7323, process 161 exit CPU.
+At time 7323, process 161 exits the system.
+At time 7343, process 160 ends I/O on network.
+At time 7343, process 160 enters CPU.
+At time 7359, process 162 enters system.
+At time 7359, process 160 exit CPU.
+At time 7359, process 160 begins I/O on Disk 2.
+At time 7359, process 162 enters CPU.
+At time 7378, process 162 exit CPU.
+At time 7378, process 162 exits the system.
+At time 7382, process 160 ends I/O on Disk 2.
+At time 7382, process 160 enters CPU.
+At time 7397, process 163 enters system.
+At time 7400, process 160 exit CPU.
+At time 7400, process 160 exits the system.
+At time 7400, process 163 enters CPU.
+At time 7423, process 163 exit CPU.
+At time 7423, process 163 exits the system.
+At time 7451, process 164 enters system.
+At time 7451, process 164 enters CPU.
+At time 7472, process 164 exit CPU.
+At time 7472, process 164 exits the system.
+At time 7501, process 165 enters system.
+At time 7501, process 165 enters CPU.
+At time 7515, process 165 exit CPU.
+At time 7515, process 165 exits the system.
+At time 7534, process 166 enters system.
+At time 7534, process 166 enters CPU.
+At time 7544, process 166 exit CPU.
+At time 7544, process 166 exits the system.
+At time 7575, process 167 enters system.
+At time 7575, process 167 enters CPU.
+At time 7587, process 167 exit CPU.
+At time 7587, process 167 exits the system.
+At time 7630, process 168 enters system.
+At time 7630, process 168 enters CPU.
+At time 7655, process 168 exit CPU.
+At time 7655, process 168 exits the system.
+At time 7684, process 169 enters system.
+At time 7684, process 169 enters CPU.
+At time 7703, process 169 exit CPU.
+At time 7703, process 169 begins I/O on Disk 2.
+At time 7714, process 170 enters system.
+At time 7714, process 170 enters CPU.
+At time 7727, process 169 ends I/O on Disk 2.
+At time 7735, process 170 exit CPU.
+At time 7735, process 170 exits the system.
+At time 7735, process 169 enters CPU.
+At time 7755, process 169 exit CPU.
+At time 7755, process 169 begins I/O on network.
+At time 7758, process 171 enters system.
+At time 7758, process 171 enters CPU.
+At time 7778, process 171 exit CPU.
+At time 7778, process 171 exits the system.
+At time 7808, process 172 enters system.
+At time 7808, process 172 enters CPU.
+At time 7811, process 169 ends I/O on network.
+At time 7822, process 172 exit CPU.
+At time 7822, process 172 exits the system.
+At time 7822, process 169 enters CPU.
+At time 7834, process 169 exit CPU.
+At time 7834, process 169 exits the system.
+At time 7856, process 173 enters system.
+At time 7856, process 173 enters CPU.
+At time 7871, process 173 exit CPU.
+At time 7871, process 173 exits the system.
+At time 7887, process 174 enters system.
+At time 7887, process 174 enters CPU.
+At time 7899, process 174 exit CPU.
+At time 7899, process 174 exits the system.
+At time 7927, process 175 enters system.
+At time 7927, process 175 enters CPU.
+At time 7950, process 175 exit CPU.
+At time 7950, process 175 begins I/O on network.
+At time 7971, process 176 enters system.
+At time 7971, process 176 enters CPU.
+At time 7993, process 176 exit CPU.
+At time 7993, process 176 begins I/O on network.
+At time 8022, process 177 enters system.
+At time 8022, process 177 enters CPU.
+At time 8034, process 177 exit CPU.
+At time 8034, process 177 exits the system.
+At time 8044, process 175 ends I/O on network.
+At time 8044, process 175 enters CPU.
+At time 8059, process 175 exit CPU.
+At time 8059, process 175 begins I/O on Disk 2.
+At time 8074, process 178 enters system.
+At time 8074, process 178 enters CPU.
+At time 8076, process 176 ends I/O on network.
+At time 8086, process 175 ends I/O on Disk 2.
+At time 8091, process 178 exit CPU.
+At time 8091, process 178 exits the system.
+At time 8091, process 176 enters CPU.
+At time 8109, process 179 enters system.
+At time 8116, process 176 exit CPU.
+At time 8116, process 176 exits the system.
+At time 8116, process 175 enters CPU.
+At time 8136, process 175 exit CPU.
+At time 8136, process 175 exits the system.
+At time 8136, process 179 enters CPU.
+At time 8158, process 180 enters system.
+At time 8159, process 179 exit CPU.
+At time 8159, process 179 exits the system.
+At time 8159, process 180 enters CPU.
+At time 8181, process 180 exit CPU.
+At time 8181, process 180 exits the system.
+At time 8218, process 181 enters system.
+At time 8218, process 181 enters CPU.
+At time 8239, process 181 exit CPU.
+At time 8239, process 181 exits the system.
+At time 8262, process 182 enters system.
+At time 8262, process 182 enters CPU.
+At time 8285, process 182 exit CPU.
+At time 8285, process 182 begins I/O on network.
+At time 8314, process 183 enters system.
+At time 8314, process 183 enters CPU.
+At time 8339, process 183 exit CPU.
+At time 8339, process 183 begins I/O on Disk 2.
+At time 8347, process 184 enters system.
+At time 8347, process 184 enters CPU.
+At time 8365, process 183 ends I/O on Disk 2.
+At time 8369, process 184 exit CPU.
+At time 8369, process 184 begins I/O on network.
+At time 8369, process 183 enters CPU.
+At time 8382, process 182 ends I/O on network.
+At time 8392, process 183 exit CPU.
+At time 8392, process 183 exits the system.
+At time 8392, process 182 enters CPU.
+At time 8400, process 185 enters system.
+At time 8415, process 182 exit CPU.
+At time 8415, process 182 exits the system.
+At time 8415, process 185 enters CPU.
+At time 8430, process 185 exit CPU.
+At time 8430, process 185 exits the system.
+At time 8431, process 186 enters system.
+At time 8431, process 186 enters CPU.
+At time 8434, process 184 ends I/O on network.
+At time 8456, process 186 exit CPU.
+At time 8456, process 186 exits the system.
+At time 8456, process 184 enters CPU.
+At time 8472, process 187 enters system.
+At time 8473, process 184 exit CPU.
+At time 8473, process 184 exits the system.
+At time 8473, process 187 enters CPU.
+At time 8496, process 187 exit CPU.
+At time 8496, process 187 exits the system.
+At time 8526, process 188 enters system.
+At time 8526, process 188 enters CPU.
+At time 8536, process 188 exit CPU.
+At time 8536, process 188 exits the system.
+At time 8581, process 189 enters system.
+At time 8581, process 189 enters CPU.
+At time 8599, process 189 exit CPU.
+At time 8599, process 189 begins I/O on Disk 2.
+At time 8615, process 190 enters system.
+At time 8615, process 190 enters CPU.
+At time 8626, process 190 exit CPU.
+At time 8626, process 190 exits the system.
+At time 8631, process 189 ends I/O on Disk 2.
+At time 8631, process 189 enters CPU.
+At time 8645, process 191 enters system.
+At time 8655, process 189 exit CPU.
+At time 8655, process 189 exits the system.
+At time 8655, process 191 enters CPU.
+At time 8667, process 191 exit CPU.
+At time 8667, process 191 exits the system.
+At time 8690, process 192 enters system.
+At time 8690, process 192 enters CPU.
+At time 8703, process 192 exit CPU.
+At time 8703, process 192 exits the system.
+At time 8748, process 193 enters system.
+At time 8748, process 193 enters CPU.
+At time 8758, process 193 exit CPU.
+At time 8758, process 193 exits the system.
+At time 8795, process 194 enters system.
+At time 8795, process 194 enters CPU.
+At time 8812, process 194 exit CPU.
+At time 8812, process 194 exits the system.
+At time 8842, process 195 enters system.
+At time 8842, process 195 enters CPU.
+At time 8861, process 195 exit CPU.
+At time 8861, process 195 begins I/O on Disk 2.
+At time 8875, process 196 enters system.
+At time 8875, process 196 enters CPU.
+At time 8885, process 195 ends I/O on Disk 2.
+At time 8889, process 196 exit CPU.
+At time 8889, process 196 exits the system.
+At time 8889, process 195 enters CPU.
+At time 8912, process 195 exit CPU.
+At time 8912, process 195 exits the system.
+At time 8914, process 197 enters system.
+At time 8914, process 197 enters CPU.
+At time 8929, process 197 exit CPU.
+At time 8929, process 197 exits the system.
+At time 8946, process 198 enters system.
+At time 8946, process 198 enters CPU.
+At time 8970, process 198 exit CPU.
+At time 8970, process 198 exits the system.
+At time 8994, process 199 enters system.
+At time 8994, process 199 enters CPU.
+At time 9006, process 199 exit CPU.
+At time 9006, process 199 exits the system.
+At time 9046, process 200 enters system.
+At time 9046, process 200 enters CPU.
+At time 9062, process 200 exit CPU.
+At time 9062, process 200 begins I/O on network.
+At time 9092, process 201 enters system.
+At time 9092, process 201 enters CPU.
+At time 9103, process 201 exit CPU.
+At time 9103, process 201 exits the system.
+At time 9137, process 202 enters system.
+At time 9137, process 202 enters CPU.
+At time 9158, process 202 exit CPU.
+At time 9158, process 202 exits the system.
+At time 9162, process 200 ends I/O on network.
+At time 9162, process 200 enters CPU.
+At time 9175, process 200 exit CPU.
+At time 9175, process 200 exits the system.
+At time 9177, process 203 enters system.
+At time 9177, process 203 enters CPU.
+At time 9196, process 203 exit CPU.
+At time 9196, process 203 begins I/O on network.
+At time 9207, process 204 enters system.
+At time 9207, process 204 enters CPU.
+At time 9226, process 204 exit CPU.
+At time 9226, process 204 begins I/O on network.
+At time 9241, process 205 enters system.
+At time 9241, process 205 enters CPU.
+At time 9254, process 203 ends I/O on network.
+At time 9255, process 205 exit CPU.
+At time 9255, process 205 begins I/O on network.
+At time 9255, process 203 enters CPU.
+At time 9267, process 203 exit CPU.
+At time 9267, process 203 exits the system.
+At time 9294, process 206 enters system.
+At time 9294, process 206 enters CPU.
+At time 9315, process 206 exit CPU.
+At time 9315, process 206 exits the system.
+At time 9316, process 205 ends I/O on network.
+At time 9316, process 205 enters CPU.
+At time 9322, process 204 ends I/O on network.
+At time 9326, process 207 enters system.
+At time 9329, process 205 exit CPU.
+At time 9329, process 205 exits the system.
+At time 9329, process 204 enters CPU.
+At time 9348, process 204 exit CPU.
+At time 9348, process 204 exits the system.
+At time 9348, process 207 enters CPU.
+At time 9358, process 208 enters system.
+At time 9367, process 207 exit CPU.
+At time 9367, process 207 begins I/O on network.
+At time 9367, process 208 enters CPU.
+At time 9377, process 208 exit CPU.
+At time 9377, process 208 exits the system.
+At time 9398, process 209 enters system.
+At time 9398, process 209 enters CPU.
+At time 9416, process 209 exit CPU.
+At time 9416, process 209 exits the system.
+At time 9441, process 207 ends I/O on network.
+At time 9441, process 207 enters CPU.
+At time 9454, process 210 enters system.
+At time 9456, process 207 exit CPU.
+At time 9456, process 207 begins I/O on Disk 2.
+At time 9456, process 210 enters CPU.
+At time 9475, process 210 exit CPU.
+At time 9475, process 210 exits the system.
+At time 9476, process 207 ends I/O on Disk 2.
+At time 9476, process 207 enters CPU.
+At time 9485, process 211 enters system.
+At time 9486, process 207 exit CPU.
+At time 9486, process 207 exits the system.
+At time 9486, process 211 enters CPU.
+At time 9505, process 211 exit CPU.
+At time 9505, process 211 exits the system.
+At time 9524, process 212 enters system.
+At time 9524, process 212 enters CPU.
+At time 9538, process 212 exit CPU.
+At time 9538, process 212 exits the system.
+At time 9582, process 213 enters system.
+At time 9582, process 213 enters CPU.
+At time 9592, process 213 exit CPU.
+At time 9592, process 213 begins I/O on network.
+At time 9639, process 214 enters system.
+At time 9639, process 214 enters CPU.
+At time 9656, process 214 exit CPU.
+At time 9656, process 214 exits the system.
+At time 9667, process 213 ends I/O on network.
+At time 9667, process 213 enters CPU.
+At time 9683, process 215 enters system.
+At time 9691, process 213 exit CPU.
+At time 9691, process 213 begins I/O on network.
+At time 9691, process 215 enters CPU.
+At time 9714, process 215 exit CPU.
+At time 9714, process 215 exits the system.
+At time 9729, process 216 enters system.
+At time 9729, process 216 enters CPU.
+At time 9748, process 216 exit CPU.
+At time 9748, process 216 begins I/O on network.
+At time 9783, process 217 enters system.
+At time 9783, process 217 enters CPU.
+At time 9788, process 213 ends I/O on network.
+At time 9804, process 217 exit CPU.
+At time 9804, process 217 begins I/O on network.
+At time 9804, process 213 enters CPU.
+At time 9818, process 218 enters system.
+At time 9818, process 213 exit CPU.
+At time 9818, process 213 exits the system.
+At time 9818, process 218 enters CPU.
+At time 9836, process 218 exit CPU.
+At time 9836, process 218 exits the system.
+At time 9843, process 216 ends I/O on network.
+At time 9843, process 216 enters CPU.
+At time 9855, process 219 enters system.
+At time 9862, process 216 exit CPU.
+At time 9862, process 216 exits the system.
+At time 9862, process 219 enters CPU.
+At time 9874, process 219 exit CPU.
+At time 9874, process 219 exits the system.
+At time 9884, process 217 ends I/O on network.
+At time 9884, process 217 enters CPU.
+At time 9895, process 217 exit CPU.
+At time 9895, process 217 begins I/O on network.
+At time 9915, process 220 enters system.
+At time 9915, process 220 enters CPU.
+At time 9927, process 220 exit CPU.
+At time 9927, process 220 exits the system.
+At time 9953, process 217 ends I/O on network.
+At time 9953, process 217 enters CPU.
+At time 9965, process 221 enters system.
+At time 9974, process 217 exit CPU.
+At time 9974, process 217 exits the system.
+At time 9974, process 221 enters CPU.
+At time 9988, process 221 exit CPU.
+At time 9988, process 221 exits the system.
+At time 10000, process 0 ends the simulation.
